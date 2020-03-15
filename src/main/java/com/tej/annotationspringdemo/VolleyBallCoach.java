@@ -13,6 +13,6 @@ public class VolleyBallCoach implements Coach {
 
     @Override
     public String getDailyWorkout() {
-        return "HelloWorld" + " - " +fortuneService.generateFortuneForTheDay();
+        return "HelloWorld" + " - " + fortuneService.generateFortuneForTheDay();
     }
 }
