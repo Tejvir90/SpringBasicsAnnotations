@@ -2,13 +2,17 @@ package com.tej.annotationspringdemo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Data
 @Component
-@AllArgsConstructor
 public class VolleyBallCoach implements Coach {
 
+
+    @Autowired
+    @Qualifier("fortuneServiceImpl")
     FortuneService fortuneService;
 
     @Override
