@@ -13,6 +13,9 @@ public class AnnotationStart {
 
         System.out.println(cricketCoach.getDailyWorkout());
 
+        Coach tableTennisCoach= annotationConfigApplicationContext.getBean("tableTennisCoach", Coach.class);
+        System.out.println(tableTennisCoach.getDailyWorkout());
+
     }
 
 }

@@ -11,7 +11,7 @@ public class PingPongCoach implements Coach {
     FortuneService fortuneService;
 
     @Autowired
-    PingPongCoach(@Qualifier("fortuneServiceImpl")FortuneService fortuneService) {
+    PingPongCoach(@Qualifier("fortuneServiceImpl") FortuneService fortuneService) {
         this.fortuneService = fortuneService;
     }
 
